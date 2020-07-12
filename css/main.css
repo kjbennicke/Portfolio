@@ -1,5 +1,6 @@
 :root{
     --darkPrimary: #7f005a;
+    --darkPrimaryHover: #9f0172;
     --lightPrimary: #8aa1ba;
     --lightSecondary:#bde8ff;
     --accentColor: #ff921e;
@@ -33,7 +34,7 @@ body
     background: var(--darkPrimary);
     width: 100%;
 }
-.nav-link, .navbar-brand{
+.nav-link{
     color: var(--lightPrimary);
     cursor: pointer;
 }
@@ -48,7 +49,10 @@ body
     border-bottom: 3px solid var(--lightSecondary);
     
 }
-navbar-brand{
+.navbar-dark .navbar-brand {
+    color: var(--lightPrimary);
+}
+.navbar-dark .navbar-brand:hover {
     color: var(--lightPrimary);
 }
 .navbar-collapse{
@@ -143,7 +147,6 @@ navbar-brand{
     padding-top: 1em;
     padding-bottom: 4em;
     position: relative;
-    background-color:var(--lightSecondary);
 }
 .portfolio h1{
     margin: 2em;
@@ -182,6 +185,28 @@ span{
     display: flex;
     justify-content: center;
 }
+input[type=submit]{
+    background-color: var(--darkPrimary);
+    color: var(--lightPrimary);
+}
+input[type=submit]:hover{
+    background-color: var(--darkPrimaryHover);
+    color: var(--lightSecondary);
+}
+.contact-form{
+    margin: 6em 0;
+    position: relative;
+}
+.contact-form h2{
+    padding: 2em 1px;
+    font-weight: 300;
+    color: var(--darkPrimary)
+}
+footer{
+    height: 500px;
+    background-color: Var(--darkPrimary);
+}
+
 /* ANIMATIONS */
 @keyframes picGrow {
     from{
